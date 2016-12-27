@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CustomButtonStyle">
+        <item name="android:layout_width">@dimen/main_button_width</item>
+        <item name="android:layout_height">@dimen/main_button_height</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/main_button_margin_top</item>
+        <item name="android:background">@color/color_bg_btn</item>
+
+        <item name="android:onClick">showToast</item>
+    </style>
+
 </resources>

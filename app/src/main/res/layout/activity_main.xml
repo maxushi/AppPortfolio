@@ -1,88 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.maxushi.android.appportfolio.MainActivity"
-    android:background="#009688">
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fillViewport="false">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="My Nanodegree Apps"
-        android:id="@+id/textView" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#009688">
 
-    <Button
-        android:text="POPULAR MOVIES"
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:id="@+id/button"
-        android:onClick="popularMovies"
-        android:background="#FF5722"/>
-
-    <Button
-        android:text="STOCK HAWK"
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:id="@+id/button2"
-        android:onClick="stockHawk"
-        android:background="#FF5722"/>
-
-    <Button
-        android:text="BUILD IT BIGGER"
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:id="@+id/button3"
-        android:onClick="buildItBigger"
-        android:background="#FF5722"/>
-
-    <Button
-        android:text="MAKE YOUR APP MATERIAL"
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:id="@+id/button4"
-        android:onClick="makeYourAppMaterial"
-        android:background="#FF5722"/>
-
-    <Button
-        android:text="GO UBIQUITOUS"
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:id="@+id/button5"
-        android:onClick="goUbiquitous"
-        android:background="#FF5722"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/my_nanodegree_apps"
+            android:id="@+id/textView" />
 
 
-    <Button
-        android:text="CAPSTONE: MY OWN APP"
-        android:layout_width="250dp"
-        android:layout_height="70dp"
-        android:layout_below="@+id/button5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:id="@+id/button6"
-        android:onClick="capstone"
-        android:background="#FF5722"/>
+        <Button
+            android:text="@string/popular_movies"
+            android:id="@+id/button"
+            android:layout_below="@+id/textView"
+            style="@style/CustomButtonStyle" />
 
-</RelativeLayout>
+        <Button
+            android:text="@string/stock_hawk"
+            android:id="@+id/button2"
+            android:layout_below="@+id/button"
+            style="@style/CustomButtonStyle" />
+
+        <Button
+            android:text="@string/build_it_bigger"
+            android:id="@+id/button3"
+            android:layout_below="@+id/button2"
+            style="@style/CustomButtonStyle" />
+
+        <Button
+            android:text="@string/make_your_app_material"
+            android:id="@+id/button4"
+            android:layout_below="@+id/button3"
+            style="@style/CustomButtonStyle"/>
+
+        <Button
+            android:text="@string/go_ubiquitous"
+            android:id="@+id/button5"
+            android:layout_below="@+id/button4"
+            style="@style/CustomButtonStyle" />
+
+
+        <Button
+            android:text="@string/capstone_my_own_app"
+            android:id="@+id/button6"
+            android:layout_below="@+id/button5"
+            style="@style/CustomButtonStyle" />
+
+    </RelativeLayout>
+</ScrollView>
